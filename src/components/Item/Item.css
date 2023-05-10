@@ -1,0 +1,16 @@
+.item{
+    padding: 20px;
+}
+
+.item .card{
+    width: 330px;
+    margin: 0 auto;
+}
+
+.item img{
+    display: block;
+}
+
+.item span{
+    display: block;
+}
