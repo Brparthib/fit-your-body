@@ -1,11 +1,25 @@
 .sideBar{
+    position: fixed;
+    right: 0;
     padding: 20px 0 0 10px;
+    background: bisque;
+    height: 100vh;
+    width: 340px;
 }
 
 .sideBar img{
     display: block;
     width: 55px;
     height: 55px;
-    border-radius: 50%;
+    border-radius: 5px;
     object-fit: cover;
+    margin: 0 auto;
+}
+
+.aboutMe a{
+    display: block;
+}
+
+.aboutMe span{
+    display: inline-block;
 }
