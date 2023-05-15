@@ -4,6 +4,8 @@
 
 .item .card{
     margin: 0 auto;
+    border: 2px solid #abbabb;
+    transition: all 1s;
 }
 
 .item img{
@@ -12,4 +14,19 @@
 
 .item span{
     display: block;
+}
+
+.item .add-btn{
+    background-color: #abbabb;
+    color: #111;
+    transition: all .5s;
+}
+
+.add-btn:hover{
+   background: rgb(188, 167, 141) !important;
+}
+
+.item .card:hover{
+    border-color: rgb(188, 167, 141) !important;
+
 }

@@ -2,7 +2,7 @@
     position: fixed;
     right: 0;
     padding: 20px 0 0 10px;
-    background: bisque;
+    background: rgb(220, 208, 193);
     height: 100vh;
     width: 340px;
 }
@@ -16,10 +16,77 @@
     margin: 0 auto;
 }
 
+.aboutMe{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .aboutMe a{
     display: block;
 }
 
 .aboutMe span{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.bodyInfo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.b-item{
+    border-radius: 10px;
+}
+
+.bodyInfo h5{
+    line-height: 15px;
+}
+
+.bodyInfo p{
+    line-height: 15px;
+}
+
+.add_break{
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.add_break span{
+    background: rgb(225, 218, 218);
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.exerciseDetail{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.xr-time,
+.br-time{
+    background: #abbabb;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title{
+    width: 90%;
+    margin: 0 auto;
 }
