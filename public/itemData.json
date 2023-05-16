@@ -6,7 +6,7 @@
     "img": "gym1",
     "age": "20-25",
     "time": 30,
-    "name": "Baldwin Rodriguez",
+    "name": "Push-up",
     "about": "Aliqua amet minim non mollit. Proident et duis laborum ea sit dolor non sit culpa nostrud pariatur."
   },
   {
@@ -16,7 +16,7 @@
     "img": "gym2",
     "age": "20-25",
     "time": 40,
-    "name": "Darcy Ratliff",
+    "name": "Military Press",
     "about": "Aliqua amet minim non mollit. Proident et duis laborum ea sit dolor non sit culpa nostrud pariatur."
   },
   {
@@ -26,7 +26,7 @@
     "img": "gym3",
     "age": "20-25",
     "time": 45,
-    "name": "Lorrie Jackson",
+    "name": "Crunches",
     "about": "Aliqua amet minim non mollit. Proident et duis laborum ea sit dolor non sit culpa nostrud pariatur."
   },
   {
@@ -36,7 +36,7 @@
     "img": "gym4",
     "age": "20-25",
     "time": 50,
-    "name": "Roth Rivers",
+    "name": "Leg Extension",
     "about": "Aliqua amet minim non mollit. Proident et duis laborum ea sit dolor non sit culpa nostrud pariatur."
   },
   {
@@ -46,7 +46,7 @@
     "img": "gym5",
     "age": "20-25",
     "time": 60,
-    "name": "Debora Reeves",
+    "name": "Dip",
     "about": "Aliqua amet minim non mollit. Proident et duis laborum ea sit dolor non sit culpa nostrud pariatur."
   },
   {
@@ -56,7 +56,7 @@
     "img": "gym6",
     "age": "20-25",
     "time": 80,
-    "name": "Adrienne Leblanc",
+    "name": "Bicep Curl",
     "about": "Aliqua amet minim non mollit. Proident et duis laborum ea sit dolor non sit culpa nostrud pariatur."
   }
 ]
