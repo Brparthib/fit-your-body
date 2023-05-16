@@ -3,12 +3,19 @@ import ExerciseItems from "./components/ExerciseItems/ExerciseItems";
 import SideBar from "./components/SideBar/SideBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { addExerciseTime } from "./utilities/fakeDb";
+import { useState } from "react";
 
 function App() {
-  let clickedTime = localStorage.getItem('exercise-time');
+  let clickedTime = localStorage.getItem("exercise-time");
+  const [exerciseTime, setExerciseTime] = useState(0);
   const handleAddToList = (selectedTime) => {
     addExerciseTime(selectedTime);
-    clickedTime = clickedTime + selectedTime;
+    if (!clickedTime) {
+      clickedTime = selectedTime;
+    } else {
+      clickedTime = parseInt(clickedTime) + selectedTime;
+    }
+    setExerciseTime(clickedTime);
   };
 
   return (
@@ -19,7 +26,7 @@ function App() {
             <ExerciseItems handleAddToList={handleAddToList}></ExerciseItems>
           </div>
           <div className="col-3">
-            <SideBar clickedTime={clickedTime}></SideBar>
+            <SideBar clickedTime={exerciseTime}></SideBar>
           </div>
         </div>
       </div>

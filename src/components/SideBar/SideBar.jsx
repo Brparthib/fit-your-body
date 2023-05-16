@@ -8,18 +8,15 @@ import { addBreakTime } from "../../utilities/fakeDb";
 const SideBar = (props) => {
   const breakTimes = [10, 20, 30, 50];
 
+  const [breakTime, setBreakTime] = useState(0);
+
   const handleBreakTime = (selectedTime) => {
     addBreakTime(selectedTime);
+
+    setBreakTime(selectedTime);
   };
 
-  const [breakTime, setBreakTime] = useState([]);
-
-  let storedBreakTime = localStorage.getItem("break-time");
-
-  useEffect(() => {
-    storedBreakTime = localStorage.getItem("break-time");
-    setBreakTime(storedBreakTime);
-  }, [storedBreakTime]);
+  
 
   return (
     <div className="sideBar">
