@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { addBreakTime } from "../../utilities/fakeDb";
 
-const SideBar = (props) => {
+const SideBar = () => {
   const breakTimes = [10, 20, 30, 50];
 
   const handleBreakTime = (selectedTime) => {
@@ -62,7 +62,7 @@ const SideBar = (props) => {
         <div className="xr-time">
           <div className="row">
             <div className="col-6">Exercise Time</div>
-            <div className="col-6 text-end">200 seconds</div>
+            <div className="col-6 text-end">{newTime} seconds</div>
           </div>
         </div>
         <div className="br-time">
