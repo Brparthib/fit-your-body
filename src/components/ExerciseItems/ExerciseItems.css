@@ -1,3 +1,9 @@
 .exerciseItems{
     padding: 20px 30px;
 }
+
+.logo span{
+    font-size: 25px;
+    color: rgb(15, 100, 84);
+    margin-right: 10px;
+}

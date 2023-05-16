@@ -5,12 +5,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { addBreakTime } from "../../utilities/fakeDb";
 
-const SideBar = () => {
+const SideBar = (props) => {
   const breakTimes = [10, 20, 30, 50];
 
   const handleBreakTime = (selectedTime) => {
     addBreakTime(selectedTime);
-  }
+  };
+
+  const [breakTime, setBreakTime] = useState([]);
+
+  let storedBreakTime = localStorage.getItem("break-time");
+
+  useEffect(() => {
+    storedBreakTime = localStorage.getItem("break-time");
+    setBreakTime(storedBreakTime);
+  }, [storedBreakTime]);
 
   return (
     <div className="sideBar">
@@ -62,13 +71,13 @@ const SideBar = () => {
         <div className="xr-time">
           <div className="row">
             <div className="col-6">Exercise Time</div>
-            <div className="col-6 text-end">{newTime} seconds</div>
+            <div className="col-6 text-end">{props.clickedTime} seconds</div>
           </div>
         </div>
         <div className="br-time">
           <div className="row">
             <div className="col-6">Break Time</div>
-            <div className="col-6 text-end">15 seconds</div>
+            <div className="col-6 text-end">{breakTime} seconds</div>
           </div>
         </div>
       </div>

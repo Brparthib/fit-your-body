@@ -1,16 +1,10 @@
 import React from "react";
 import "./Item.css";
-import gym from "../../images/gym3.webp"
-import { addExerciseTime } from "../../utilities/fakeDb";
-
+import gym from "../../images/gym3.webp";
 
 const Item = (props) => {
-  const {item} = props;
+  const { handleAddToList, item } = props;
   const { name, age, time, about } = item;
-
-  const handleAddToList = (selectedTime) => {
-    addExerciseTime(selectedTime);
-  };
 
   return (
     <div className="item col-4">
@@ -21,7 +15,13 @@ const Item = (props) => {
           <p>{about}</p>
           <span>For Age: {age}</span>
           <span>Time required: {time}s</span>
-          <button type="button" onClick={() => handleAddToList(time)} className="btn add-btn mt-3">Add To List</button>
+          <button
+            type="button"
+            onClick={() => handleAddToList(time)}
+            className="btn add-btn mt-3"
+          >
+            Add To List
+          </button>
         </div>
       </div>
     </div>
